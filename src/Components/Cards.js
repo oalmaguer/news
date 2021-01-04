@@ -75,8 +75,9 @@ class Cards extends React.Component {
     
 
     getNews(event) {
+        const proxyUrl = "https://cors-anywhere.herokuapp.com/";
          var key = "23de237b3d5a45c2becdee407614db97";
-        axios.get(`https://newsapi.org/v2/everything?q=${this.state.topic}&language=${this.state.language}&apiKey=${key}&pageSize=50`)
+        axios.get(`${proxyUrl}https://newsapi.org/v2/everything?q=${this.state.topic}&language=${this.state.language}&apiKey=${key}&pageSize=50`)
         .then(news => {
             var articles = news.data.articles;
             console.log(articles);
