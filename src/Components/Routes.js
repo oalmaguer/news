@@ -41,7 +41,7 @@ export default function Routes() {
           of them to render at a time
         */}
         <Switch>
-          <Route exact path="/newsApp">
+          <Route exact path="/news">
             <Cards />
           </Route>
           <Route path="/saved">

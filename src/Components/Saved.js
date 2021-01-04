@@ -28,7 +28,7 @@ export default class Saved extends Component {
     render() {
         return(
             <div>
-            <Link to="/" state={this.state}>Go back</Link><br />
+            <Link to="/news" state={this.state}>Go back</Link><br />
             <div className="d-flex justify-content-center mt-5">
             <Card style={{ width: '25rem'}}>
   <Card.Header>Your saved news</Card.Header>
