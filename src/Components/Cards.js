@@ -79,7 +79,7 @@ class Cards extends React.Component {
     getNews(event) {
          var key = "23de237b3d5a45c2becdee407614db97";
         // axios.get(`http://newsapi.org/v2/everything?q=${this.state.topic}&language=${this.state.language}&apiKey=${key}&pageSize=50`)
-        axios.get(`http://api.mediastack.com/v1/news?access_key=fbda70b804223eba9a77a64b26c47c2b&keywords=${this.state.topic}&languages=${this.state.language}&sort=published_desc`)
+        axios.get(`https://api.mediastack.com/v1/news?access_key=fbda70b804223eba9a77a64b26c47c2b&keywords=${this.state.topic}&languages=${this.state.language}&sort=published_desc`)
         .then(news => {
             var articles = news.data.data;
                 console.log(articles);
